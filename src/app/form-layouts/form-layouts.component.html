@@ -1,0 +1,20 @@
+<h1>Layout</h1>
+
+<div class="container">
+  <form class="form-horizontal form-inline" [formGroup]="formGroup">
+    <div class="row">
+      <form [formGroup]="formGroup">
+        <div *ngFor="let controlModel of formModel">
+          <dynamic-ng-bootstrap-form-control [group]="formGroup"
+                                             [model]="controlModel">&nbsp;&nbsp;This will be my label</dynamic-ng-bootstrap-form-control>
+
+        </div>
+      </form>
+    </div>
+  </form>
+</div>
+
+
+
+
+
